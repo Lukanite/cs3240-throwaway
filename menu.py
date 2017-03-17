@@ -11,6 +11,7 @@ def subMenu():
     print("This is a sub menu. What would you like to do?")
     print("1. Go back")
     print("2. What's 1+1?")
+    print("")
     response = getMenuResponse(2)
     if response == 1:
         return 0
@@ -23,11 +24,12 @@ def mainMenu():
     print("1. Say hi")
     print("2. Say bye (and quit)")
     print("3. More...")
+    print("")
     response = getMenuResponse(3)
     if response == 1:
-        print("Hi there.")
+        print("Hi there.\n")
     elif response == 2:
-        print("Goodbye")
+        print("Goodbye\n")
         return 0
     else:
         subMenu()
